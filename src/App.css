@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+*{
+  scroll-behavior: smooth;
+}
+
+.nav-container-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* min-height: 90px; */
+  gap: 2rem;
+
+}
+
+.dark-container{
+  padding-right: 2rem;
+}
+
+
+.landing-page-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.name-container{
+  /* background-color: aqua; */
+  height: 100vh;
+}
+.image-container{
+  /* background-color: rgb(126, 237, 237); */
+  height: 100vh;
+}
+
+.landing-page-fruit-image{
+  padding-left: 10rem;
+  margin-top: 5rem;
+  align-items: center;
+ 
+
+
+}
+
+.web-name-container{
+  display: flex;
+  font-size: 8rem;
+  text-align: center;
+  padding-left: 5rem;
+  height: 15rem;
+ 
+}
+
+
+.green-text{
+  color: #02652A;
+}
+
+
+
+/* 
+.bottom-name-text{
+  padding-top: 2rem;
+} */
+
+.slogan-text{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: solid;
+  font-weight: 50;
+}
+
+/* .slogan-div{
+  text-align: end;
+} */
+
+.neumorphism{
+  border-radius: 28px;
+background: white;
+box-shadow:  18px 18px 23px #929292,
+             -18px -18px 23px #ffffff;
+}
+
+.newmorphismTwo{
+  border-radius: 26px;
+background: #e0e0e0;
+box-shadow:  5px 5px 6px #5a5a5a,
+             -5px -5px 6px #ffffff;
+}
+
+
+.neumorphism3{
+  /* border-radius: 91px;
+  background: #e0e0e0;
+  box-shadow:  14px 14px 8px #5a5a5a,
+               -14px -14px 8px #ffffff; */
+
+}
+
+
+
+
+
+
+
+
+{/*For cards to be chosen for food Varieties*/}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* background: lightgrey; */
+  border-radius: 30px;
+  overflow: hidden;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  transition: all 1s ease-in-out;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+}
+
+.logo {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.logo .logo-svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.icon .svg {
+  fill: rgba(255, 255, 255, 0.797);
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.389);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 1px solid white;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .svg {
+  fill: white;
+}
+
+.box1 {
+  width: 70%;
+  height: 70%;
+  bottom: -70%;
+  left: -70%;
+}
+
+.box1::before {
+  background: radial-gradient(circle at 30% 107%, #f0efe4 0%, #97fdc7 5%, #f4d7ed 60%, #bbe5ff 90%);
+}
+
+.box1:hover::before {
+  opacity: 1;
+}
+
+.box1:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box2 {
+  width: 50%;
+  height: 50%;
+  bottom: -50%;
+  left: -50%;
+  transition-delay: 0.2s;
+}
+
+.box2::before {
+  background: radial-gradient(circle at 30% 107%, #eaf5f7 0%, rgb(176, 196, 243)238, 79) 90%);
+}
+
+.box2:hover::before {
+  opacity: 1;
+}
+
+.box2:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box3 {
+  width: 30%;
+  height: 30%;
+  bottom: -30%;
+  left: -30%;
+  transition-delay: 0.4s;
+}
+
+.box3::before {
+  background: radial-gradient(circle at 30% 107%, #f2f3ff 0%, #33fe6d 90%);
+}
+
+.box3:hover::before {
+  opacity: 1;
+}
+
+.box3:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box4 {
+  width: 10%;
+  height: 10%;
+  bottom: -10%;
+  left: -10%;
+  transition-delay: 0.6s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.card:hover .logo {
+  transform: translate(0, 0);
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*for Loader CSS*/}
+
+
+
